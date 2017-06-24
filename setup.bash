@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+# gdebi
+sudo apt install gdebi;
+
 # steam
 sudo apt install steam;
 
@@ -29,7 +32,7 @@ sudo apt install eclipse;
 
 # google chrome
 wget -O ~/google-chrome-stable_current_amd64.deb 'https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb';
-gdebi ~/google-chrome-stable_current_amd64.deb;
+sudo gdebi ~/google-chrome-stable_current_amd64.deb;
 rm ~/google-chrome-stable_current_amd64.deb;
 
 # private internet access
@@ -42,13 +45,14 @@ rm ~/pia-v70-installer-linux.sh;
 
 # discord
 wget -O ~/discord-0.0.1.deb 'https://dl.discordapp.net/apps/linux/0.0.1/discord-0.0.1.deb';
-gdebi ~/discord-0.0.1.deb;
+sudo gdebi ~/discord-0.0.1.deb;
 rm ~/discord-0.0.1.deb;
 
 # vmware
 wget -O VMware-Player-12.5.7-5813279.x86_64.bundle 'https://download3.vmware.com/software/player/file/VMware-Player-12.5.7-5813279.x86_64.bundle';
 
 chmod +x VMware-Player-12.5.7-5813279.x86_64.bundle;
-rm VMware-Player-12.5.7-5813279.x86_64.bundle;
+sudo ~/VMware-Player-12.5.7-5813279.x86_64.bundle;
+rm ~/VMware-Player-12.5.7-5813279.x86_64.bundle;
 
 sudo apt update;
